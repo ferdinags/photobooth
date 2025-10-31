@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photobooth Minimalis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📸 Photobooth Minimalis</h1>
+
+  <div class="stage">
+    <video id="video" autoplay playsinline muted></video>
+  </div>
+
+  <div class="controls">
+    <button id="captureBtn">Ambil Foto</button>
+    <button id="retakeBtn" disabled>Ulangi</button>
+    <button id="downloadBtn" disabled>Download Photo</button>
+    <button id="flipBtn">Flip Mirror</button>
+  </div>
+
+  <div id="preview" class="preview-container" hidden>
+    <h3>📷 Preview Strip Photobooth</h3>
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
